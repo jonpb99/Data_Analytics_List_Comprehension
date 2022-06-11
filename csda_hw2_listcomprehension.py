@@ -49,7 +49,7 @@ for a in price:
     i += 1
 print(price_med)
 
-# number6 z
+# number6 (incomplete)
 price_med2 = [price.index(z) for z in price if z == "med"]
 print(price_med2)
 
@@ -58,6 +58,10 @@ num_pass_price_med = []
 for a in price_med:
     num_pass_price_med.append(num_passengers[a])
 print(num_pass_price_med)
+
+# number7
+num_pass_price_med2 = [num_passengers[z] for z in price_med]
+print(num_pass_price_med2)
 
 #number5
 price_high = []
@@ -73,3 +77,11 @@ for a in price_high:
         high_price_high_maintenance.append(a)
 print(high_price_high_maintenance)
 
+#number8
+high_price_high_maintenance2 =[z for z in price_high if maintenance_cost[z] != "low"]
+print(high_price_high_maintenance2)
+
+#number9
+nlist = [[1,2,3],['A','B','C'],[4,5],['D','E']]
+nlist2 = [z for z in nlist for z in z]
+print(nlist2)
