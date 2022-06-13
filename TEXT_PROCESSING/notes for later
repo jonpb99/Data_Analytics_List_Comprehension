@@ -1,0 +1,15 @@
+import re
+
+html = "<title>+++BREAKING NEWS+++<title>"
+
+tag = re.compile('\<{1}[a-zA-Z]+\>{1}')
+scantag = tag.findall(html)
+print(scantag)
+
+
+
+equation = "(5-3)^2=5^2-2*5*3+3^2"
+
+numtag = re.compile('[0-9=+*()^-]+')
+scanum = numtag.findall(equation)
+print(scanum)
